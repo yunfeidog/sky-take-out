@@ -4,6 +4,7 @@ import com.sky.constant.MessageConstant;
 import com.sky.result.Result;
 import com.sky.service.DishService;
 import com.sky.utils.AliOssUtil;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/admin/common")
 @Slf4j
+@Api(value = "CommonController", tags = {"公共接口"})
 public class CommonController {
 
     @Autowired
